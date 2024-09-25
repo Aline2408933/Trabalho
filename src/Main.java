@@ -72,5 +72,43 @@ public class Main {
         resposta = q5.leiaResposta();
         q5.isCorreta(resposta);
 
+        Questao q6 = new Questao();
+        q6.pergunta = "6 - Qual e o valor de x na equação 3x-7=11?";
+        q6.opcaoA = "a - 4";
+        q6.opcaoB = "b - 5";
+        q6.opcaoC = "c - 6";
+        q6.opcaoD = "d - 7";
+        q6.opcaoE = "e - 8";
+        q6.correta = "a";
+
+        q6.escrevaQuestao();
+        resposta = q6.leiaResposta();
+        q6.isCorreta(resposta);
+
+        Questao q7 = new Questao();
+        q7.pergunta = "7 - Qual é a soma dos ângulos internos de um hexágono?";
+        q7.opcaoA = "a - 360º";
+        q7.opcaoB = "b - 720º";
+        q7.opcaoC = "c - 540º";
+        q7.opcaoD = "d - 900º";
+        q7.opcaoE = "e - 1080º";
+        q7.correta = "c";
+
+        q7.escrevaQuestao();
+        resposta = q7.leiaResposta();
+        q7.isCorreta(resposta);
+
+        Questao q8 = new Questao();
+        q8.pergunta = "8 - QUal o resultado de 10!?";
+        q8.opcaoA = "a - 1.000";
+        q8.opcaoB = "b - 5.000";
+        q8.opcaoC = "c - 10.000";
+        q8.opcaoD = "d - 3.628.000";
+        q8.opcaoE = "e - 36.288";
+        q8.correta = "d";
+
+        q8.escrevaQuestao();
+        resposta = q8.leiaResposta();
+        q8.isCorreta(resposta);
     }
 }
