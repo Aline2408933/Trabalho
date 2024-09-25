@@ -137,5 +137,32 @@ public class Main {
         resposta = q10.leiaResposta();
         q10.isCorreta(resposta);
 
+        Questao q11 = new Questao();
+        q11.pergunta = " 11 - O que é um triângulo obtuso?";
+        q11.opcaoA = "a - Um ângulo menor que 90 graus.";
+        q11.opcaoB = "b - Um ângulo exatamente igual a 90 graus";
+        q11.opcaoC = "c - Um ângulo maior que 90 graus e menor que 180 graus.";
+        q11.opcaoD = "d - Um ângulo maior que 180 graus.";
+        q11.opcaoE = "e - Um ângulo que soma 360 graus";
+        q11.correta = "c";
+
+        q11.escrevaQuestao();
+        resposta = q11.leiaResposta();
+        q11.isCorreta(resposta);
+
+        Questao q12 = new Questao();
+        q12.pergunta = " 12 - O que é uma função linear?";
+        q12.opcaoA = "a - Uma função que tem a forma y= ax+b.";
+        q12.opcaoB = "b - Uma função que nunca cruza o eixo y";
+        q12.opcaoC = "c - Uma função que tem um gráfco em forma de parábola.";
+        q12.opcaoD = "d - Uma função que sempre tem a mesma inclinação.";
+        q12.opcaoE = "e - Uma função que é definida apenas para números inteiros";
+        q12.correta = "a";
+
+        q12.escrevaQuestao();
+        resposta = q12.leiaResposta();
+        q12.isCorreta(resposta);
+
+
     }
 }
