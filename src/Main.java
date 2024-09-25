@@ -110,5 +110,32 @@ public class Main {
         q8.escrevaQuestao();
         resposta = q8.leiaResposta();
         q8.isCorreta(resposta);
+
+        Questao q9 = new Questao();
+        q9.pergunta = " 9 - Qual o valor de 2 elevado a 5?";
+        q9.opcaoA = "a - 10";
+        q9.opcaoB = "b - 25";
+        q9.opcaoC = "c - 64";
+        q9.opcaoD = "d - 32";
+        q9.opcaoE = "e - 48";
+        q9.correta = "d";
+
+        q9.escrevaQuestao();
+        resposta = q9.leiaResposta();
+        q9.isCorreta(resposta);
+
+        Questao q10 = new Questao();
+        q10.pergunta = " 10 - Se x+2 =10 qual o valor 3x-4?";
+        q10.opcaoA = "a - 6";
+        q10.opcaoB = "b - 8";
+        q10.opcaoC = "c - 10";
+        q10.opcaoD = "d - 12";
+        q10.opcaoE = "e - 14";
+        q10.correta = "b";
+
+        q10.escrevaQuestao();
+        resposta = q10.leiaResposta();
+        q10.isCorreta(resposta);
+
     }
 }
