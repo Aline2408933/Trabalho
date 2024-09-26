@@ -163,6 +163,48 @@ public class Main {
         resposta = q12.leiaResposta();
         q12.isCorreta(resposta);
 
+        Questao q13 = new Questao();
+        q13.pergunta = " 13 - O que caracteriza uma progressão aritmética (PA)?";
+        q13.opcaoA = "a - A soma de termos consecutivos é constante.";
+        q13.opcaoB = "b - A diferença entre termos consecutivos é constante.";
+        q13.opcaoC = "c - O produto de termos consecutivos é constante.";
+        q13.opcaoD = "d - Os termos são sempre números primos.";
+        q13.opcaoE = "e - Os termos aumentam exponencialmente.";
+        q13.correta = "b";
+
+        q13.escrevaQuestao();
+        resposta = q13.leiaResposta();
+        q13.isCorreta(resposta);
+
+
+        Questao q14 = new Questao();
+        q14.pergunta = " 14 - Qual é a definição de um número primo?";
+        q14.opcaoA = "a - Um número que pode ser dividido por 2";
+        q14.opcaoB = "b - Um número que tem mais de dois divisores.";
+        q14.opcaoC = "c - Um número que é sempre positivo.";
+        q14.opcaoD = "d - Um número que termina em 0 ou 5.";
+        q14.opcaoE = "e - Um número que é divisível apenas por 1 e por si mesmo.";
+        q14.correta = "e";
+
+        q14.escrevaQuestao();
+        resposta = q14.leiaResposta();
+        q14.isCorreta(resposta);
+
+        Questao q15 = new Questao();
+        q15.pergunta = " 15 - Qual o valor de 9 elevado a dois - 5 elevado a 2?";
+        q15.opcaoA = "a - 56";
+        q15.opcaoB = "b - 91.";
+        q15.opcaoC = "c - 64.";
+        q15.opcaoD = "d - 56.";
+        q15.opcaoE = "e - 80";
+        q15.correta = "d";
+
+        q15.escrevaQuestao();
+        resposta = q15.leiaResposta();
+        q15.isCorreta(resposta);
+
+
+
 
     }
 }
