@@ -165,7 +165,7 @@ public class Main {
         Questao q10 = new Questao();
         q10.pergunta = "10 - Se x+2 =10 qual o valor 3x-4?";
         q10.opcaoA = "a - 6";
-        q10.opcaoB = "b - 8";
+        q10.opcaoB = "b - 20";
         q10.opcaoC = "c - 10";
         q10.opcaoD = "d - 12";
         q10.opcaoE = "e - 14";
@@ -249,7 +249,7 @@ public class Main {
 
         Questao q15 = new Questao();
         q15.pergunta = "15 - Qual o valor de 9 elevado a dois - 5 elevado a 2?";
-        q15.opcaoA = "a - 56";
+        q15.opcaoA = "a - 46";
         q15.opcaoB = "b - 91.";
         q15.opcaoC = "c - 64.";
         q15.opcaoD = "d - 56.";
