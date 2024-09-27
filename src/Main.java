@@ -1,11 +1,13 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
         Cabecalho c = new Cabecalho();
         c.escreva();
 
+        int acertos = 0;
+        int erros = 0;
+        int totalQuestoes = 15;
+        Questao[] questao = new Questao[totalQuestoes];
 
         Questao q1 = new Questao();
         q1.pergunta = "1 - Qual o valor de 7+3x2?";
@@ -18,7 +20,11 @@ public class Main {
 
         q1.escrevaQuestao();
         String resposta = q1.leiaResposta();
-        q1.isCorreta(resposta);
+        if (q1.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q2 = new Questao();
         q2.pergunta = "2 - Qual é a raiz quadrada de 144?";
@@ -31,7 +37,11 @@ public class Main {
 
         q2.escrevaQuestao();
         resposta = q2.leiaResposta();
-        q2.isCorreta(resposta);
+        if (q2.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q3 = new Questao();
         q3.pergunta = "3 - Se um triângulo tem um ângulo de 90 graus, qual é o nome desse triângulo?";
@@ -44,7 +54,11 @@ public class Main {
 
         q3.escrevaQuestao();
         resposta = q3.leiaResposta();
-        q3.isCorreta(resposta);
+        if (q3.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q4 = new Questao();
         q4.pergunta = "4 - Qual é a fração equivalente a 0,25?";
@@ -57,7 +71,11 @@ public class Main {
 
         q4.escrevaQuestao();
         resposta = q4.leiaResposta();
-        q4.isCorreta(resposta);
+        if (q4.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q5 = new Questao();
         q5.pergunta = "5 - Qual é a soma dos ângulos internos de um triângulo?";
@@ -70,7 +88,11 @@ public class Main {
 
         q5.escrevaQuestao();
         resposta = q5.leiaResposta();
-        q5.isCorreta(resposta);
+        if (q5.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q6 = new Questao();
         q6.pergunta = "6 - Qual e o valor de x na equação 3x-7=11?";
@@ -83,7 +105,11 @@ public class Main {
 
         q6.escrevaQuestao();
         resposta = q6.leiaResposta();
-        q6.isCorreta(resposta);
+        if (q6.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q7 = new Questao();
         q7.pergunta = "7 - Qual é a soma dos ângulos internos de um hexágono?";
@@ -96,10 +122,14 @@ public class Main {
 
         q7.escrevaQuestao();
         resposta = q7.leiaResposta();
-        q7.isCorreta(resposta);
+        if (q7.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q8 = new Questao();
-        q8.pergunta = "8 - QUal o resultado de 10!?";
+        q8.pergunta = "8 - Qual o resultado de 10!?";
         q8.opcaoA = "a - 1.000";
         q8.opcaoB = "b - 5.000";
         q8.opcaoC = "c - 10.000";
@@ -109,10 +139,14 @@ public class Main {
 
         q8.escrevaQuestao();
         resposta = q8.leiaResposta();
-        q8.isCorreta(resposta);
+        if (q8.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q9 = new Questao();
-        q9.pergunta = " 9 - Qual o valor de 2 elevado a 5?";
+        q9.pergunta = "9 - Qual o valor de 2 elevado a 5?";
         q9.opcaoA = "a - 10";
         q9.opcaoB = "b - 25";
         q9.opcaoC = "c - 64";
@@ -122,10 +156,14 @@ public class Main {
 
         q9.escrevaQuestao();
         resposta = q9.leiaResposta();
-        q9.isCorreta(resposta);
+        if (q9.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q10 = new Questao();
-        q10.pergunta = " 10 - Se x+2 =10 qual o valor 3x-4?";
+        q10.pergunta = "10 - Se x+2 =10 qual o valor 3x-4?";
         q10.opcaoA = "a - 6";
         q10.opcaoB = "b - 8";
         q10.opcaoC = "c - 10";
@@ -135,10 +173,14 @@ public class Main {
 
         q10.escrevaQuestao();
         resposta = q10.leiaResposta();
-        q10.isCorreta(resposta);
+        if (q10.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q11 = new Questao();
-        q11.pergunta = " 11 - O que é um triângulo obtuso?";
+        q11.pergunta = "11 - O que é um triângulo obtuso?";
         q11.opcaoA = "a - Um ângulo menor que 90 graus.";
         q11.opcaoB = "b - Um ângulo exatamente igual a 90 graus";
         q11.opcaoC = "c - Um ângulo maior que 90 graus e menor que 180 graus.";
@@ -148,23 +190,31 @@ public class Main {
 
         q11.escrevaQuestao();
         resposta = q11.leiaResposta();
-        q11.isCorreta(resposta);
+        if (q11.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q12 = new Questao();
-        q12.pergunta = " 12 - O que é uma função linear?";
+        q12.pergunta = "12 - O que é uma função linear?";
         q12.opcaoA = "a - Uma função que tem a forma y= ax+b.";
         q12.opcaoB = "b - Uma função que nunca cruza o eixo y";
-        q12.opcaoC = "c - Uma função que tem um gráfco em forma de parábola.";
+        q12.opcaoC = "c - Uma função que tem um gráfico em forma de parábola.";
         q12.opcaoD = "d - Uma função que sempre tem a mesma inclinação.";
         q12.opcaoE = "e - Uma função que é definida apenas para números inteiros";
         q12.correta = "a";
 
         q12.escrevaQuestao();
         resposta = q12.leiaResposta();
-        q12.isCorreta(resposta);
+        if (q12.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q13 = new Questao();
-        q13.pergunta = " 13 - O que caracteriza uma progressão aritmética (PA)?";
+        q13.pergunta = "13 - O que caracteriza uma progressão aritmética (PA)?";
         q13.opcaoA = "a - A soma de termos consecutivos é constante.";
         q13.opcaoB = "b - A diferença entre termos consecutivos é constante.";
         q13.opcaoC = "c - O produto de termos consecutivos é constante.";
@@ -174,11 +224,14 @@ public class Main {
 
         q13.escrevaQuestao();
         resposta = q13.leiaResposta();
-        q13.isCorreta(resposta);
-
+        if (q13.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q14 = new Questao();
-        q14.pergunta = " 14 - Qual é a definição de um número primo?";
+        q14.pergunta = "14 - Qual é a definição de um número primo?";
         q14.opcaoA = "a - Um número que pode ser dividido por 2";
         q14.opcaoB = "b - Um número que tem mais de dois divisores.";
         q14.opcaoC = "c - Um número que é sempre positivo.";
@@ -188,10 +241,14 @@ public class Main {
 
         q14.escrevaQuestao();
         resposta = q14.leiaResposta();
-        q14.isCorreta(resposta);
+        if (q14.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
         Questao q15 = new Questao();
-        q15.pergunta = " 15 - Qual o valor de 9 elevado a dois - 5 elevado a 2?";
+        q15.pergunta = "15 - Qual o valor de 9 elevado a dois - 5 elevado a 2?";
         q15.opcaoA = "a - 56";
         q15.opcaoB = "b - 91.";
         q15.opcaoC = "c - 64.";
@@ -201,10 +258,17 @@ public class Main {
 
         q15.escrevaQuestao();
         resposta = q15.leiaResposta();
-        q15.isCorreta(resposta);
+        if (q15.isCorreta(resposta)) {
+            acertos++;
+        } else {
+            erros++;
+        }
 
+        double porcentagemAcertos = ((double) acertos / totalQuestoes) * 100;
 
-
-
+        System.out.println("Resultado Final:");
+        System.out.println("Você acertou " + acertos + " questões.");
+        System.out.println("Você errou " + erros + " questões.");
+        System.out.printf("Porcentagem de acertos: %.2f%%\n", porcentagemAcertos);
     }
 }
